@@ -66,8 +66,6 @@ class LotteryPipline(object):
             logging.info('Current records and storage success')
         except Exception as e:
             logging.warning(e)
-        d = SH.fetch_all(spider.name)
-        print(d)
         SH.close()
         return item
 
